@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int top=200;
+	int pant=350;
+	int shirt=300;
+	int saree=400;
+	int legging=250;
+	char name[30];
+	int bill,tax,ob;
+	int topq,pantq,shirtq,sareeq,leggingq;
+	printf("enter no. of tops");
+	scanf("%d",&topq);
+	printf("enter no. od pants");
+	scanf("%d",&pantq);
+	printf("enter no. of shirts");
+	scanf("%d",&shirtq);
+	printf("enter no. of sarees");
+	scanf("%d",&sareeq);
+	printf("enter no. of leggings");
+	scanf("%d",&leggingq);
+	bill=(topq*top)+(pantq*pant)+(shirtq*shirt)+(sareeq*saree)+(leggingq*legging);
+	if(bill>=1000)
+	tax=bill*10/100;
+	else if(bill>=700)
+	tax=bill*7/100;
+	else if(bill>=500)
+	tax=bill*5/100;
+	else if(bill>=200)
+	tax=bill*3/100;
+	else
+	tax=0;
+	printf("\namount to be paid:%d",ob);
+}
